@@ -143,20 +143,21 @@
             </section>
 
             <section>
-
-                <ul>
-                    <li>Oracle GlassFish Server 3.x TMAX JEUS 7
-                    <li>IBM WebSphere Application Server 8.x
-                    <li>Fujitsu Interstage Application Server powered by Windows Azure   </li>
-                    <li>IBM WebSphere Application Server Community Edition 3.0       </li>
-                    <li>Fujitsu Interstage Application Server v10.1                 </li>
-                    <li>Oracle WebLogic Server Apache Geronimo 3.0-beta-1                        </li>
-                    <li>JBoss Application Server 7.x                                        </li>
-                    <li>Hitachi uCosminexus Application Server v9.0                    </li>
-                    <li>JBoss Enterprise Application Platform 6                   </li>
-                    <li>NEC WebOTX Application Server V9.x                   </li>
-                    <li>InforSuite Application Server Enterprise Edition V9.1</li>
-                </ul>
+                <div id="myCanvasContainer2">
+                    <canvas width="600" height="600" id="myCanvas2" style="background-color: lightgray; border-radius: 20px">
+                        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                        <ul>
+                            <li><a href="#"><img src="Cosminexus.png"></a></li>
+                            <li><a href="#"><img src="fujitsu.png"></a></li>
+                            <li><a href="#"><img src="geronimo.jpg"></a></li>
+                            <li><a href="#"><img src="glassfish.gif"></a></li>
+                            <li><a href="#"><img src="infors.png"></a></li>
+                            <li><a href="#"><img src="jboss.jpg"></a></li>
+                            <li><a href="#"><img src="nec.gif"></a></li>
+                            <li><a href="#"><img src="redhat.png"></a></li>
+                        </ul>
+                    </canvas>
+                </div>
             </section>
         </section>
 
@@ -577,6 +578,12 @@
         } catch (e) {
             // something went wrong, hide the canvas container
             document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+        try {
+            TagCanvas.Start('myCanvas2');
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer2').style.display = 'none';
         }
     };
 </script>
