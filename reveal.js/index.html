@@ -29,6 +29,8 @@
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
+    <script src="js/tagcanvas.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -89,7 +91,8 @@
             <aside class="notes">
                 16 jaar oud
 
-                Eerste release in 1999 (10 specs), servlet, EJB, JMS
+                Eerste release in 1999 (10 specs), servlet, EJB, JMS, JDBC, JSP
+                5 versies erna
             </aside>
         </section>
 
@@ -102,7 +105,59 @@
 
                 2009, $420 miljoen, VMWare
                 April 2013, Pivotal
+                Vele versies
             </aside>
+        </section>
+
+        <section>
+            <section>
+                <h3>Totstandkoming</h3>
+            </section>
+            <section>
+                <h3>Spring</h3>
+                <aside class="notes">
+                    1 implementatie
+                    1 source
+                    1 api
+                </aside>
+            </section>
+            <section>
+                <h3>Java EE</h3>
+            </section>
+            <section>
+                <div id="myCanvasContainer">
+                    <canvas width="600" height="600" id="myCanvas" style="background-color: lightgray; border-radius: 20px">
+                        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                        <ul>
+                            <li><a href="#">Batoo JPA</a></li>
+                            <li><a href="#">DataNucleus</a></li>
+                            <li><a href="#">EclipseLink</a></li>
+                            <li><a href="#">Hibernate</a></li>
+                            <li><a href="#">Kundera</a></li>
+                            <li><a href="#">ObjectDB</a></li>
+                            <li><a href="#">OpenJPA</a></li>
+                            <li><a href="#">OrientDBs</a></li>
+                        </ul>
+                    </canvas>
+                </div>
+            </section>
+
+            <section>
+
+                <ul>
+                    <li>Oracle GlassFish Server 3.x TMAX JEUS 7
+                    <li>IBM WebSphere Application Server 8.x
+                    <li>Fujitsu Interstage Application Server powered by Windows Azure   </li>
+                    <li>IBM WebSphere Application Server Community Edition 3.0       </li>
+                    <li>Fujitsu Interstage Application Server v10.1                 </li>
+                    <li>Oracle WebLogic Server Apache Geronimo 3.0-beta-1                        </li>
+                    <li>JBoss Application Server 7.x                                        </li>
+                    <li>Hitachi uCosminexus Application Server v9.0                    </li>
+                    <li>JBoss Enterprise Application Platform 6                   </li>
+                    <li>NEC WebOTX Application Server V9.x                   </li>
+                    <li>InforSuite Application Server Enterprise Edition V9.1</li>
+                </ul>
+            </section>
         </section>
 
         <section>
@@ -494,6 +549,36 @@
             {src: 'plugin/notes/notes.js', async: true}
         ]
     });
+</script>
+
+<script type="text/javascript">
+    window.onload = function () {
+        TagCanvas.textFont = 'Trebuchet MS, Helvetica, sans-serif';
+        TagCanvas.textColour = '#00f';
+        TagCanvas.textHeight = 25;
+        TagCanvas.outlineMethod = 'block';
+        TagCanvas.outlineColour = '#acf';
+        TagCanvas.maxSpeed = 0.03;
+        TagCanvas.minBrightness = 0.2;
+        TagCanvas.depth = 0.92;
+        TagCanvas.pulsateTo = 0.6;
+        TagCanvas.initial = [0.1, -0.1];
+        TagCanvas.decel = 0.98;
+        TagCanvas.reverse = true;
+        TagCanvas.hideTags = false;
+        TagCanvas.shadow = '#ccf';
+        TagCanvas.shadowBlur = 3;
+        TagCanvas.weight = false;
+        TagCanvas.imageScale = null;
+        TagCanvas.fadeIn = 1000;
+        TagCanvas.clickToFront = 600;
+        try {
+            TagCanvas.Start('myCanvas');
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
 </script>
 
 </body>
