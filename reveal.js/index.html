@@ -53,6 +53,10 @@
             <h1>Introductie in Java EE</h1>
 
             <h3>In precies 1 uur</h3>
+
+            <aside class="notes">
+                Aanleiding
+            </aside>
         </section>
 
         <section data-transition="none">
@@ -65,7 +69,8 @@
             <h3 class="fragment">(en .NET'ers) </h3>
 
             <aside class="notes">
-                Enterprise Web Application Development
+                Enterprise Web Application Development<br />
+                Verzekeringen, Banken, Overheid
             </aside>
         </section>
 
@@ -75,9 +80,8 @@
                 <li>Geschiedenis van Java EE</li>
                 <li>Geschiedenis van Spring</li>
                 <li>Feature comparison</li>
-                <li>Waarom een feature comparison nutteloos is</li>
                 <li>Conclusie</li>
-                <li>Hoe maak ik een Java EE app in 10 minuten</li>
+                <li>Hoe maak ik een Java EE app</li>
             </ul>
         </section>
 
@@ -90,29 +94,33 @@
 
         <section data-background="javaee.png">
             <aside class="notes">
-                16 jaar oud
-
-                Eerste release in 1999 (10 specs), servlet, EJB, JMS, JDBC, JSP
-                5 versies erna
+                16 jaar oud <br/>
+                sun, standardizatie enterprise ontwikkeling <br/>
+                Eerste release in 1999 (10 specs) <br/>
+                servlet, EJB, JMS, JDBC, JSP <br/>
+                5 versies erna <br />
+                open source
             </aside>
         </section>
 
         <section data-background="spring.jpg"></section>
         <section data-background="spring2.png">
             <aside class="notes">
-                13 jaar oud
-                Rod Johnson
-                Expert One-on-One J2EE Design and Development
+                13 jaar oud <br/>
+                Rod Johnson <br/>
+                Expert One-on-One J2EE Design and Development <br/><br/>
 
-                2009, $420 miljoen, VMWare
-                April 2013, Pivotal
-                Vele versies
+                2009, $420 miljoen, VMWare <br/>
+                April 2013, Pivotal <br/>
+                Vele versies <br/>
+                open source - commercial vendor
             </aside>
         </section>
 
         <section>
             <section>
                 <h3>Totstandkoming</h3>
+                <aside class="notes">Grootste verschil</aside>
             </section>
             <section>
                 <h3>Spring</h3>
@@ -128,34 +136,22 @@
             <section>
                 <p>JCP, JSR, Specificatie vs Implementatie</p>
                 <aside class="notes">
-                    Java Community Process
-                    Java Specification Request
+                    Java Community Process <br/>
+                    Java Specification Request <br/>
 
-                    Set van interfaces en contracten
-                    Reference implementation
+                    Set van interfaces en contracten <br/>
+                    Reference implementation <br/>
 
-                    Open voor bedrijven en individuen
+                    Open voor bedrijven en individuen <br/>
                 </aside>
             </section>
             <section>
                 <h3>Proven technology</h3>
                 <aside class="notes">
-                    Verschil met Spring
-                    Niet nieuw
-                    Per design
+                    Verschil met Spring <br/>
+                    Niet nieuw <br/>
+                    Per design <br/>
                 </aside>
-            </section>
-            <section>
-                <h3>Oude ideeën</h3>
-
-                <ul>
-                    <li class="fragment">Java EE servers zijn traag. <span class="fragment">Wildfly start op in minder dan 5 seconden.</span>
-                    </li>
-                    <li class="fragment">EJB's zijn heavy-weight components. <span class="fragment">EJB's zijn 3.3% trager dan POJO's.</span>
-                    </li>
-                    <li class="fragment">EAR's zijn complex. <span
-                            class="fragment">Maar het kan ook in een war.</span></li>
-                </ul>
             </section>
             <section>
                 <h3>JPA implementaties</h3>
@@ -212,6 +208,31 @@
         </section>
 
         <section>
+            <ul>
+                <li>Beide sterke middleware oplossingen</li>
+                <li>Doen hetzelfde, op een andere manier</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Java EE</h3>
+            <ul>
+                <li>Vele implementaties</li>
+                <li>Open voor innovatie/expansie</li>
+                <li>Open standaard</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Spring</h3>
+            <ul>
+                <li>Snellere innovatie</li>
+                <li>Meer low-level control</li>
+                <li>Meer functionaliteit</li>
+            </ul>
+        </section>
+
+        <section>
             <section>
                 <h3>Samen werken aan een beter framework</h3>
                 <h4>2 kampen tegen elkaar of 2 visies op hetzelfde?</h4>
@@ -258,6 +279,19 @@
                 JCache: een van de oudste JSR <br /><br />
                 Security: meer dan role-based access
             </aside>
+        </section>
+
+        <section>
+            <h3>Oude ideeën</h3>
+
+            <ul>
+                <li class="fragment">Java EE servers zijn traag. <span class="fragment">Wildfly start op in minder dan 5 seconden.</span>
+                </li>
+                <li class="fragment">EJB's zijn heavy-weight components. <span class="fragment">EJB's zijn 3.3% trager dan POJO's.</span>
+                </li>
+                <li class="fragment">EAR's zijn complex. <span
+                        class="fragment">Maar het kan ook in een war.</span></li>
+            </ul>
         </section>
 
         <section>
